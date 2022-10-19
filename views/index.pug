@@ -1,0 +1,45 @@
+//- index.pug
+doctype html 
+html 
+  head 
+    style 
+      include ../static/style.css
+  body 
+    nav#navbar
+      img.navLogo(src="/static/KPKlogo.png" alt="Image not found")
+      h1.logoName Kurrey 
+      li #[a(href="/") Home]
+      li #[a(href="/") Blog]
+      li #[a(href="/") Contact us]
+      button#btn Call us 
+      
+    section#mainPage
+      h1 Read my posts 
+      p.para Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, quis earum.
+
+    section#page2 
+      h1.h1 Page 2-Our resent posts
+      div.boxContainer
+
+        div.box
+          div.heading1
+            h1.h1 Post 1
+          p.para Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quo nostrum nihil, blanditiis eum odit eligendi accusamus quia doloribus, tempora vero veniam magni praesentium. Optio praesentium quos rem ipsam nam assumenda aliquid voluptatibus excepturi.
+          button#btn Read more..
+
+        div.box
+          div.heading2
+            h1.h1 Post 1
+          p.para Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quo nostrum nihil, blanditiis eum odit eligendi accusamus quia doloribus, tempora vero veniam magni praesentium. Optio praesentium quos rem ipsam nam assumenda aliquid voluptatibus excepturi.
+          button#btn Read more..
+        
+        div.box
+          div.heading3
+            h1.h1 Post 1
+          p.para Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quo nostrum nihil, blanditiis eum odit eligendi accusamus quia doloribus, tempora vero veniam magni praesentium. Optio praesentium quos rem ipsam nam assumenda aliquid voluptatibus excepturi.
+          button#btn Read more..
+    footer#foot 
+      | Copyright &copy 2021 www.kurrey.com | Allrights reserved !
+    
+    script 
+      include ../static/script.js

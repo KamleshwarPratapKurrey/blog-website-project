@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap');
+*{
+    padding: 0%;
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#mainPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 48.1rem;
+    /* border: .2rem solid black; */
+}
+#mainPage::before{
+    content: "";
+    background: url('/static/bg7.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 57rem;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: var(--opacity);
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: .2rem solid white; */
+    margin: 9rem 8rem 4rem 8rem;
+    box-shadow: 0 0 1.9rem var(--bx-shadow);
+    padding: 3rem 0;
+    border-radius: 2rem;
+    background-color: rgb(112, 112, 112);
+
+}
+form input{
+    padding: 1rem 0.67rem;
+    outline: none;
+    margin: 0.1rem;
+    width: 75%;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.8rem
+
+}
+/* form::before{
+    content: "";
+    background: url('/static/bg2.jpg') no-repeat center center/cover;
+    width: 88.1%;
+    height: 42.5rem;
+    position: absolute;
+    z-index: -1;
+    opacity: var(--opacity);
+    border-radius: 3rem;
+} */

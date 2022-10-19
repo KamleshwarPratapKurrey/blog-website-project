@@ -1,0 +1,20 @@
+//- base.pug
+doctype html 
+html 
+  head 
+    title KURREY
+    block scripts 
+    block style 
+
+  body 
+    nav#navbar
+      img.navLogo(src="/static/KPKlogo.png" alt="Image not found")
+      h1.logoName Kurrey 
+      li #[a(href="/") Home]
+      li #[a(href="/blog") Blog]
+      li #[a(href="/contact") Contact us]
+      button#btn Call us 
+        
+    block content 
+    footer#foot 
+      | Copyright &copy All Rights Reserved by www.kurrey.com

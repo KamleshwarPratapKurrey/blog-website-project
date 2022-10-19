@@ -1,0 +1,38 @@
+//- contact.pug
+extends base.pug
+
+block scripts 
+  script(src='/static/script.pug')
+
+block style 
+  style 
+    include ../static/style.css
+  style 
+    include ../static/blogStyle.css
+
+block content  
+  section#mainPage
+    h1 My blog  
+    p.para Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, quis earum.
+
+  section#page2 
+    h1.h1 Page 2-My posts
+
+    div.boxContainer
+      div.box
+        div.heading1
+          h1.h1 Post 1
+        p.para Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quo nostrum nihil, blanditiis eum odit eligendi accusamus quia doloribus, tempora vero veniam magni praesentium. Optio praesentium quos rem ipsam nam assumenda aliquid voluptatibus excepturi.
+        button#btn Read more..
+
+      div.box
+        div.heading2
+          h1.h1 Post 2
+        p.para Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quo nostrum nihil, blanditiis eum odit eligendi accusamus quia doloribus, tempora vero veniam magni praesentium. Optio praesentium quos rem ipsam nam assumenda aliquid voluptatibus excepturi.
+        button#btn Read more..
+        
+      div.box
+        div.heading3
+          h1.h1 Post 3
+        p.para Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quo nostrum nihil, blanditiis eum odit eligendi accusamus quia doloribus, tempora vero veniam magni praesentium. Optio praesentium quos rem ipsam nam assumenda aliquid voluptatibus excepturi.
+        button#btn Read more..

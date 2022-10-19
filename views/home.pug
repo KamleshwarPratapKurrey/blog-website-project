@@ -1,0 +1,37 @@
+//- home.pug
+extends base.pug
+
+block scripts 
+  script(src='/static/index.pug')
+
+block style 
+  style 
+    include ../static/style.css
+  style 
+    include ../static/home.css
+
+block content 
+  section#mainPage
+    h1 Read my posts 
+    p.para Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, quis earum.
+
+  section#blogPage2 
+    h1.h1 page 2-My resent posts 
+
+    div#blogContainer
+      div.blogBox
+        div.blogBoxHeading
+          h1.h1 Post 1
+        p.para Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime laudantium, quibusdam quis doloribus hic nam atque dolore deserunt voluptate quasi perferendis sed voluptas quam tempore quas inventore animi omnis aliquid, praesentium expedita voluptates nesciunt? Nisi temporibus incidunt corrupti nam, quia fuga illo! Ullam, voluptatum.
+        button#btn Read more..
+      
+      div.blogBox
+        div.blogBoxHeading
+          h1.h1 Post 1
+        p.para Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime laudantium, quibusdam quis doloribus hic nam atque dolore deserunt voluptate quasi perferendis sed voluptas quam tempore quas inventore animi omnis aliquid, praesentium expedita voluptates nesciunt? Nisi temporibus incidunt corrupti nam, quia fuga illo! Ullam, voluptatum.
+        button#btn Read more..
+      div.blogBox
+        div.blogBoxHeading
+          h1.h1 Post 1
+        p.para Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime laudantium, quibusdam quis doloribus hic nam atque dolore deserunt voluptate quasi perferendis sed voluptas quam tempore quas inventore animi omnis aliquid, praesentium expedita voluptates nesciunt? Nisi temporibus incidunt corrupti nam, quia fuga illo! Ullam, voluptatum.
+        button#btn Read more..
